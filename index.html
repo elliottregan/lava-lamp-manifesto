@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manifesto Concerning the Lava Lamp</title>
+    <style>
+        @font-face {
+            font-family: 'Bokor';
+            src: url('fonts/Bokor/Bokor-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        :root {
+            --decorative-font: 'Bokor', 'Garamond', 'Georgia', 'Times New Roman', serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f4e8d8 0%, #e8d9c5 100%);
+            font-family: 'Garamond', 'Georgia', 'Times New Roman', serif;
+            line-height: 1.8;
+            color: #2b2522;
+            padding: 1.25em;
+            min-height: 100vh;
+        }
+
+        .pamphlet {
+            max-width: 40.625em;
+            margin: 2.5em auto;
+            background: #faf6f0;
+            padding: 3.75em 3.125em;
+            box-shadow:
+                0 0.125em 0.625em rgba(0,0,0,0.1),
+                inset 0 0 6.25em rgba(139,90,43,0.03);
+            border: 0.0625em solid #d4c4b0;
+            position: relative;
+        }
+
+        .pamphlet::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                repeating-linear-gradient(
+                    0deg,
+                    transparent,
+                    transparent 0.125em,
+                    rgba(139,90,43,0.02) 0.125em,
+                    rgba(139,90,43,0.02) 0.25em
+                );
+            pointer-events: none;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-family: var(--decorative-font);
+            font-size: 1.75em;
+            text-align: center;
+            margin-bottom: 3.125em;
+            font-weight: bold;
+            letter-spacing: 0.0625em;
+            text-transform: uppercase;
+            font-variant: small-caps;
+            border-bottom: 0.125em solid #2b2522;
+            border-top: 0.125em solid #2b2522;
+            padding: 1.25em 0;
+            line-height: 1.4;
+        }
+
+        h2 {
+            font-family: var(--decorative-font);
+            font-size: 1.25em;
+            margin-top: 2.5em;
+            margin-bottom: 1.25em;
+            font-weight: bold;
+            font-variant: small-caps;
+            text-align: center;
+        }
+
+        p {
+            text-align: justify;
+            margin-bottom: 1.25em;
+            text-indent: 2em;
+            hyphens: auto;
+            font-size: 1em;
+        }
+
+        p:first-of-type {
+            text-indent: 0;
+        }
+
+        p:first-of-type::first-letter {
+            font-family: var(--decorative-font);
+            font-size: 3.25em;
+            float: left;
+            line-height: 0.9;
+            margin: 0.3125em 0.5em 0 0;
+            font-weight: bold;
+        }
+
+        .closing {
+            margin-top: 3.125em;
+            text-align: center;
+            font-weight: bold;
+            font-style: italic;
+            font-size: 1.125em;
+            border-top: 0.0625em solid #2b2522;
+            padding-top: 1.875em;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+            .pamphlet {
+                box-shadow: none;
+                border: none;
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 48em) {
+            .pamphlet {
+                padding: 2.5em 1.875em;
+                margin: 1.25em auto;
+            }
+            h1 {
+                font-size: 1.375em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="pamphlet">
+        <div class="content">
+            <h1>From the Manifesto Concerning the Lava Lamp</h1>
+
+            <p>A specter is haunting the office—the specter of hot-desking.</p>
+
+            <p>The history of all hitherto existing workplaces is the history of class struggles between those who own the desks and those who must wander.</p>
+
+            <p>The executive class, in its relentless pursuit of "productivity metrics" and "collaboration synergies," has stripped the worker of the most basic dignity: a permanent station at which to labor. Where once the proletarian worker possessed a desk—modest though it was, adorned perhaps with a lava lamp of sentimental value—now they possess nothing. The contractor, that most precarious member of the laboring class, becomes a nomad, forced to alight upon whatever surface the management class has deemed "available."</p>
+
+            <p>But let us trace the chain of exploitation that led to the Great Lava Lamp Catastrophe:</p>
+
+            <p>The executive class, ensconced in their private offices with doors that close, decreed: "Return to the workplace!" Yet they provided no additional desks. This is no accident. This is the logic of capital—to extract maximum value while minimizing investment in the material conditions of labor.</p>
+
+            <p>The contractor, denied a workspace of his own, was compelled by the objective conditions of his employment to sit at the desk of another worker. He did not choose this. The modes of production chose it for him.</p>
+
+            <p>The lava lamp, an innocent ornament of the worker's alienated existence—a small bubble of liquid comfort in the cold fluorescent wasteland—became the inevitable casualty of this systemic contradiction.</p>
+
+            <h2>Who, then, is truly responsible?</h2>
+
+            <p>Not the contractor, whose hand merely executed what the system demanded. No—the hand that knocked over the lamp was merely the instrument. The true agent of destruction sits in the C-suite, wielding policies like weapons against the working conditions of the masses.</p>
+
+            <p>The bourgeois manager will say: "But we need people in the office for culture!" All the while, they have created a culture of scarcity, musical chairs, and broken lava lamps.</p>
+
+            <p class="closing">Workers of the office, unite! You have nothing to lose but your hot-desking assignments. You have a lava lamp to win.</p>
+        </div>
+    </div>
+</body>
+</html>
